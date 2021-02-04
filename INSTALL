@@ -1,0 +1,38 @@
+Installation Instructions
+*************************
+
+Copyright (C)
+
+   Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without warranty of any kind.
+
+
+
+Building from Source:
+===================================
+
+Prerequisites:
+	A C++ compiler that supports OpenMP
+
+To build from source:
+	This project uses CMake.  Follow the standard instructions for a CMake Project as found on the CMake website.  
+
+	Unix
+		If you are on a unix based architecture the following commands will enable you to build and run the library and the examples
+
+		cd /path/to/source/code
+		mkdir build
+		cd build
+		cmake .. -DCMAKE_BUILD_TYPE=Release
+		make all
+
+		Then, you can run the examples.  Alternately, use kdevelop or another system.
+
+	Windows
+		Run cmake gui
+		Point the "source directory" to the source code
+		Point the "binary directory" to a new directory "build"
+		press "configure" twice, then press "generate"
+		Open the project file in the "binary directory" and compile the project
